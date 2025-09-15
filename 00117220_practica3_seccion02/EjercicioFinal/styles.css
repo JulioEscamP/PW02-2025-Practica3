@@ -1,0 +1,39 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --pink: #E12AFB;
+    --green: #45E605;
+}
+
+.my-element{
+    height: 100px;
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.shopping-cart {
+    animation: slideIn 3s ease-in-out;
+}
+
+.btn-pay{
+    background-color: var(--blue);
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.btn-pay:hover{
+    background-color: var(--pink);
+    cursor: crosshair;
+}
+
+@keyframes slideIn{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
